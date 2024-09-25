@@ -18,9 +18,9 @@
             <StackPanel>
                 <Label Content="Listado de Empleados" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
 
-                <DataGrid Name="dgvEmpleados" AutoGenerateColumns="True" Height="300" Margin="0,10,0,20"
+                <DataGrid Name="dgvEmpleados"  AutoGenerateColumns="True" Height="300" Margin="0,10,0,20"
                           Background="White" Foreground="Black"
-                          BorderBrush="Gray" BorderThickness="1"/>
+                          BorderBrush="Gray" BorderThickness="1" SelectionChanged="dgvEmpleados_SelectionChanged"/>
 
                 <Button Content="Listar Empleados" Click="CargarEmpleados_Click"
                         Width="150" HorizontalAlignment="Center"
@@ -95,15 +95,19 @@
         </ScrollViewer>
         <ScrollViewer Grid.Column="2" Margin="10">
             <StackPanel>
+
                 <Label Content="Eliminar Empleado" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+
                 <Label Content="ID Empleado:" />
                 <TextBox Name="txtIdEmpleado2" Margin="0,5,0,10" />
+
                 <Button Content="Eliminar Empleado" Click="EliminarEmpleado_Click"
-                        Width="150" HorizontalAlignment="Center"
-                        Background="#FF3C8DAD" Foreground="White"
-                        FontWeight="Bold" BorderBrush="White" BorderThickness="2"/>
+                Width="150" HorizontalAlignment="Center"
+                Background="#FF3C8DAD" Foreground="White"
+                FontWeight="Bold" BorderBrush="White" BorderThickness="2"/>
             </StackPanel>
         </ScrollViewer>
+
         <ScrollViewer Grid.Column="3" Margin="10">
             <StackPanel>
                 <Label Content="Actualizar Empleado" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
@@ -121,6 +125,46 @@
 
                 <Label Content="Tratamiento:" />
                 <TextBox Name="txtTratamiento2" Margin="0,5,0,10" />
+
+                <Label Content="Fecha de Nacimiento:" />
+                <DatePicker Name="dpFechaNacimiento3" Margin="0,5,0,10" />
+
+                <Label Content="Fecha de Contratación:" />
+                <DatePicker Name="dpFechaContratacion3" Margin="0,5,0,10" />
+
+                <Label Content="Dirección:" />
+                <TextBox Name="txtDireccion3" Margin="0,5,0,10" />
+
+                <Label Content="Ciudad:" />
+                <TextBox Name="txtCiudad3" Margin="0,5,0,10" />
+
+                <Label Content="Región:" />
+                <TextBox Name="txtRegion3" Margin="0,5,0,10" />
+
+                <Label Content="Código Postal:" />
+                <TextBox Name="txtCodPostal3" Margin="0,5,0,10" />
+
+                <Label Content="País:" />
+                <TextBox Name="txtPais3" Margin="0,5,0,10" />
+
+                <Label Content="Teléfono Domicilio:" />
+                <TextBox Name="txtTelDomicilio3" Margin="0,5,0,10" />
+
+                <Label Content="Extensión:" />
+                <TextBox Name="txtExtension3" Margin="0,5,0,10" />
+
+                <Label Content="Notas:" />
+                <TextBox Name="txtNotas3" Margin="0,5,0,20" TextWrapping="Wrap" AcceptsReturn="True" Height="60"/>
+
+                <Label Content="Jefe (ID):" />
+                <TextBox Name="txtJefe3" Margin="0,5,0,10" />
+
+                <Label Content="Sueldo Básico:" />
+                <TextBox Name="txtSueldoBasico3" Margin="0,5,0,10" />
+
+                <Label Content="Activo:" />
+                <CheckBox Name="chkActivo3" Margin="0,5,0,10" />
+                
                 <Button Content="Actualizar Empleado" Click="ActualizarEmpleado_Click"
                         Width="150" HorizontalAlignment="Center"
                         Background="#FF3C8DAD" Foreground="White"
